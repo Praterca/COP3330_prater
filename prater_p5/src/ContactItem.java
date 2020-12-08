@@ -9,12 +9,6 @@ private String email;
 
 public ContactItem(String First, String Last, String phoneNumber, String email) {
 
-    if(First.isBlank() && Last.isBlank() && phoneNumber.isBlank() && email.isBlank()){
-
-        System.out.printf("Please provide at least 1 character in any of the categories");
-
-    }
-
     this.First = First;
     this.Last = Last;
     this.phoneNumber = phoneNumber;
@@ -24,12 +18,6 @@ public ContactItem(String First, String Last, String phoneNumber, String email) 
 
     public void editContact(String First, String Last, String phoneNumber, String email){
 
-        if(First.isBlank() && Last.isBlank() && phoneNumber.isBlank() && email.isBlank()){
-
-            System.out.printf("Please provide at least 1 character in any of the categories");
-
-        }
-
         this.First = First;
         this.Last = Last;
         this.phoneNumber = phoneNumber;
@@ -38,7 +26,7 @@ public ContactItem(String First, String Last, String phoneNumber, String email) 
     }
 
     public String toString(){
-        return "First Name: " + this.First + "\n" + "Last Name: " + this.Last + "\n" + "Phone Number: " + this.phoneNumber + "\n" + "Email: " + this.email + "\n";
+        return "Name: " + this.First + " " + this.Last + "\n" + "Phone Number: " + this.phoneNumber + "\n" + "Email: " + this.email + "\n\n";
     }
 
 

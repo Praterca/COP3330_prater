@@ -132,7 +132,7 @@ public class TaskApp {
 
     public void saveList(){
         //calls save list Method from taskList
-        System.out.printf("What name would you like to give the file\n?");
+        System.out.printf("What name would you like to give the file?\n");
         String name = input.nextLine();
 
         taskList.saveList(name);
@@ -274,7 +274,7 @@ public class TaskApp {
 
 
                 }else if (menu == 3){
-                    System.out.println("Thank you for Checking out my program, have a good day!!");
+                    System.out.println("Back to main menu...");
                 }
                 else if (menu >= 4){
                 System.out.println("Invalid Choice. Try again...");
